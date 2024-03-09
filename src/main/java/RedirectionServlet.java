@@ -10,7 +10,6 @@ public class RedirectionServlet extends HttpServlet {
         String userDetails = req.getHeader("User-Agent").toLowerCase();
         System.out.println(userDetails);
         if(userDetails.contains("edg")){
-
             resp.sendRedirect("https://www.microsoft.com/en-us/edge?ep=313&form=MA13M0&es=40");
         } else if (userDetails.contains("firefox")) {
             resp.sendRedirect("https://www.mozilla.org/en-US/firefox/new/");
